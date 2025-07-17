@@ -1,0 +1,19 @@
+<mvc:View controllerName="fiori.main.projectmain.controller.employeeDetailPage"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="productDetail" title="Product Detail Page" showNavButton="true" navButtonPress="onNavButtonPress">
+         <f:SimpleForm>
+        <f:content>
+            <Label text="Employee Name"/>
+            <Input value="{employeeDetailModel>/name}"/>
+            <Label text="Employee Designation"/>
+            <Input value="{employeeDetailModel>/designation}"/>
+            <Label text="Department"/>
+            <Input value="{employeeDetailModel>/department}"/>
+            <Label text="Email"/>
+            <Input value="{employeeDetailModel>/email}"/>
+        </f:content>
+    </f:SimpleForm>
+    </Page>
+</mvc:View>

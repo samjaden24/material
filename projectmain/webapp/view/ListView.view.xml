@@ -1,0 +1,38 @@
+<mvc:View controllerName="fiori.main.projectmain.controller.ListView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        	<List id="ListId"
+		headerText="Employee List"
+		items="{
+			path: '/employees'
+		}" >
+		<!-- <StandardListItem
+			title="{name}"
+			description="{designation}"/> -->
+		<CustomListItem >
+			<HBox justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMargin"> 
+				<VBox >
+					<Text text="{name}" class="sapUiSmallMarginBottom" />
+					<Text text="{designation}" />
+				</VBox>
+				<Button text="Details" press="onShowDetails" />
+			</HBox>
+		</CustomListItem>
+			<headerToolbar>
+			<!-- <OverflowToolbar> -->
+				<Toolbar>
+					<content>
+						<Title text="Reporting Managers"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://sorting-ranking" press="onSort"></Button>
+						<SearchField width="25%" change="onLiveChange"/>
+					</content>	
+			</Toolbar>
+			<!-- </OverflowToolbar> -->
+		</headerToolbar>
+	</List>
+	<Button text="Navigate to Table" press="onNavTabView"/>
+	
+    </Page>
+</mvc:View>

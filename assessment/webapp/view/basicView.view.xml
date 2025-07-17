@@ -1,0 +1,68 @@
+<mvc:View controllerName="demo.assessment.assessment.controller.basicView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="basePage" title="Material">
+    <Table id="idMaterialsTable" 
+		items="{
+			path: 'material>/'
+		}" 
+        >
+        <!-- itemPress="onItemPress" -->
+        <headerToolbar>
+				<Toolbar>
+					<content>
+						<ToolbarSpacer/>
+                        <Button text="Actions" icon="sap-icon://slim-arrow-down" press="onActionsPress"/>
+						<Button text="Sort" icon="sap-icon://sort" press="onDynamicSort"></Button>
+						<SearchField width="25%" liveChange="onChange"/>
+					</content>	
+			</Toolbar>
+		</headerToolbar>
+        <ActionSheet id="actionSheet" placement="Bottom" showCancelButton="true" cancelButtonText="Cancel">
+            <buttons>
+                <Button text="Create" icon="sap-icon://add" press="onCreatePress"/>
+                <Button text="Update" icon="sap-icon://edit" press="onUpdatePress"/>
+                <Button text="Delete" icon="sap-icon://delete" press="onDeletePress"/>
+            </buttons>
+        </ActionSheet>
+		<columns>
+			<Column >
+                <Text text="Material ID"></Text>
+            </Column>
+            <Column >
+                <Text text="Material Name"></Text>
+            </Column>
+            <Column >
+                <Text text="Material Type"></Text>
+            </Column>
+            <Column >
+                <Text text="Unit Of Measure"></Text>
+            </Column>
+            <Column >
+                <Text text="Current Stock"></Text>
+            </Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Navigation" press="onNavigation">
+				<cells >
+					<Text text="{material>materialId}"/>
+                    <Text text="{material>materialName}"></Text>
+                    <Text text="{material>description}"></Text>
+                    <Text text="{material>unitOfMeasure}"></Text>
+                    <ObjectStatus text="{material>currentStock}" state="{=${material>currentStock} > 500 ? 'Success' : 'Error'}"/>
+                    <!-- <Text text="{current_stock}"></Text> -->
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+    <!-- <List
+        id="idVendorsList"
+		headerText="Vendor List"
+		items="{filteredVendors>/}" >
+		<StandardListItem
+			title="Vendor Name:{filteredVendors>vendor_name}"
+			description="Contact Person:{filteredVendors>contact_person}"/>
+	</List> -->
+
+    </Page>
+</mvc:View>

@@ -1,0 +1,109 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "demo.assessment.assessment",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.2",
+      "toolsId": "8c7f0367-e1c8-4999-a22e-6dba13a17c09"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.138.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "demo.assessment.assessment.i18n.i18n"
+        }
+      },
+      "material":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/material.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "demo.assessment.assessment.view",
+        "async": true,
+        "viewPath": "demo.assessment.assessment.view"
+      },
+      "routes": [
+        {
+          "name": "RoutebasicView",
+          "pattern": ":?query:",
+          "target": ["TargetbasicView"]
+        },
+        {
+          "name": "RoutedetailList",
+          "pattern": "detailList/{materialId}",
+          "target": ["TargetdetailList"]
+        }
+      ],
+      "targets": {
+        "TargetbasicView": {
+          "id": "basicView",
+          "name": "basicView"
+        },
+        "TargetdetailList":{
+          "id": "detailList",
+          "name": "detailList"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "demo.assessment.assessment.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

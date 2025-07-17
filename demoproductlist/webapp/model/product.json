@@ -1,0 +1,36 @@
+{
+    "Products": [
+        {
+            "ProductId": 1,
+            "ProductName": "Pearson",
+            "ProductDescription": "Cosmetics and Jewellery Items",
+            "Location": "Waldrof",
+            "CostCenter": "1100-100",
+            "Status":"Active"
+        },
+        {
+            "ProductId": 2,
+            "ProductName": "Johnson",
+            "ProductDescription": "Baby Products",
+            "Location": "London",
+            "CostCenter": "2100-100",
+            "Status":"InActive"
+        },
+        {
+            "ProductId": 3,
+            "ProductName": "Himalaya",
+            "ProductDescription": "Pharmaceutical and Medicines",
+            "Location": "Bangalore",
+            "CostCenter": "1200-100",
+            "Status":"InActive"
+        },
+        {
+            "ProductId": 4,
+            "ProductName": "ABB",
+            "ProductDescription": "Aeronatical Spare Parts",
+            "Location": "Chennai",
+            "CostCenter": "3100-100",
+            "Status":"Active"
+        }
+    ]
+}

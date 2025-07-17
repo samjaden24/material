@@ -1,0 +1,66 @@
+<mvc:View controllerName="fiori.main.projectmain.controller.TableView"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns = "sap.m">
+
+<Page id="page" title="{i18n>title}">
+    <Table id="table"
+           items="{path:'/employees'}" mode="SingleSelectLeft">
+           <headerToolbar>
+               <Toolbar >
+                  <content>
+                     <Title text="Employee Table"/>
+                     <ToolbarSpacer/>
+                     <Button icon="sap-icon://sort" press="onSort"/>
+                     <Button icon="sap-icon://add" press="onAddEmployee"/>
+                     <Button icon="sap-icon://edit" press="onEdit"></Button>
+                     <Button icon="sap-icon://drop-down-list" press="onClickSort"/>
+                     <SearchField width="30%" liveChange="onLiveChange" />  
+                  </content>   
+               </Toolbar>
+           </headerToolbar>
+        <columns>
+    <Column>
+        <Text text="Employee Id"/>
+     </Column>
+     <Column>
+        <Text text="Employee Name"/>
+     </Column>
+     <Column>
+        <Text text="Employee Designation"/>
+     </Column>
+     <Column>
+        <Text text="Department"/>
+     </Column>
+     <Column>
+        <Text text="Email"/>
+     </Column>
+     <Column>
+        <Text text="Phone"/>
+     </Column>
+     <Column>
+        <Text text="Location"/>
+     </Column>
+     <Column>
+        <Text text="Delete"/>
+     </Column>
+    </columns>
+    <items>
+        <ColumnListItem type="Navigation" press="onNav">
+        <cells>
+        <Text text="{id}"/>
+        <Text text="{name}"/>
+        <Text text="{designation}"/>
+        <Text text="{department}"/>
+        <Text text="{email}"/>
+        <Text text="{phone}"/>
+        <Text text="{location}"/>
+        <Button icon="sap-icon://delete" press="onDelete"/>
+        <!-- <ObjectStatus text="{products>Status}" state="{=${products>Status}==='Active' ? 'Success' : 'Error'}" /> -->
+        <!-- <Text text="{products>Status}"/> -->
+        </cells>
+        </ColumnListItem>
+    </items>
+
+    </Table>
+</Page>
+</mvc:View>

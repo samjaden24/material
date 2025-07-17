@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="sortDialog" title="Sort Options" class="sapUiContentPadding">
+        <content>
+            <VBox spacing="1rem">
+                <Label text="Select field to sort" labelFor="sortFieldSelect" />
+                <Select id="sortFieldSelect" width="100%">
+                    <items>
+                        <core:Item key="materialId" text="Material ID"/>
+                        <core:Item key="materialName" text="Material Name"/>
+                        <core:Item key="description" text="Description"/>
+                        <core:Item key="unitOfMeasure" text="Unit of Measure"/>
+                        <core:Item key="currentStock" text="Current Stock"/>
+                    </items>
+                </Select>
+
+                <Label text="Select Sort Order" />
+                <RadioButton id="rbAscending" text="Ascending" groupName="sortOrder" selected="true" />
+                <RadioButton id="rbDescending" text="Descending" groupName="sortOrder" />
+            </VBox>
+        </content>
+
+        <beginButton>
+            <Button text="Confirm" press="onSortConfirm" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onSortCancel" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

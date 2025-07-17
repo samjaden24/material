@@ -1,0 +1,9 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="demo.fiori.demoproductlist.controller.productList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       <List items="{/EmployeeList}">
+            <StandardListItem title="{Name}"/>
+       </List> 
+    </Page>
+</mvc:View>

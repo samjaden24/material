@@ -1,0 +1,56 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="demo.fiori.demoproductlist.controller.productList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+            <Table id="tabId" items="{products>/Products}">
+            <headerToolbar>
+               <Toolbar>
+                  <content>
+                     <Title text="Product Table"/>
+                     <ToolbarSpacer/>
+                     <SearchField width="20%" change="onChange"/> 
+                  </content>
+               </Toolbar>
+            </headerToolbar>
+    <columns>
+    <Column>
+        <Text text="Product Id"/>
+     </Column>
+     <Column>
+        <Text text="Product Name"/>
+     </Column>
+     <Column>
+        <Text text="Product Description"/>
+     </Column>
+     <Column>
+        <Text text="Location"/>
+     </Column>
+     <Column>
+        <Text text="Cost Center"/>
+     </Column>
+     <Column>
+        <Text text="Status"/>
+     </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+        <cells>
+        <Text text="{products>ProductId}"/>
+        <Text text="{products>ProductName}"/>
+        <Text text="{products>ProductDescription}"/>
+        <Text text="{products>Location}"/>
+        <Text text="{products>CostCenter}"/>
+        <ObjectStatus text="{products>Status}" state="{=${products>Status}==='Active' ? 'Success' : 'Error'}" />
+        <!-- <Text text="{products>Status}"/> -->
+        </cells>
+        </ColumnListItem>
+    </items>
+    </Table>
+    <List headerText="Employee List" 
+          items = "{employees>/EmployeeList}" >
+        <StandardListItem title="{employees>Name}" 
+                          description="{employees>Dept}"/>
+    </List>
+    
+    </Page>
+</mvc:View>

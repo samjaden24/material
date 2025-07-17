@@ -1,0 +1,51 @@
+<mvc:View
+    xmlns:tnt="sap.tnt"
+    controllerName="demo.fiori.demoproject.controller.DemoView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+    <subHeader>
+         <Toolbar>
+                    <content>
+                        <Title text="Task Tracker" />
+                        <ToolbarSpacer />
+                        <Button text="Create"
+                                icon="sap-icon://create" 
+                                press="onTaskCreate"/>
+                        <Button
+                            text="Edit"
+                            icon="sap-icon://edit"
+                            press="onTaskEdit"/>
+                        <Button
+                            text="Delete"
+                            icon="sap-icon://delete"
+                            press="onTaskDelete"/>
+                        <Button 
+                            text="Sort"
+                            icon="sap-icon://sort"
+                            press="onTaskSort"/>
+                        <SearchField width="30%" liveChange="onSearchChange"/>
+                    </content>
+                </Toolbar>
+    </subHeader>
+    <content>
+        <List id="taskList" items="{ path:'/tasks' }" mode="SingleSelectLeft">
+                <CustomListItem>
+                    <VBox class="sapUiSmallMargin">
+                        <HBox justifyContent="SpaceBetween" alignItems="Center">
+                            <Label text="{taskName}" design="Bold" />
+                            <Label text="{taskId}" design="Bold" />
+                        </HBox>
+                        <Text text="{description}" />
+                        <ObjectStatus text="{status}" state="{path: 'criticality', formatter: '.getCriticality'}"></ObjectStatus>
+                    </VBox>
+                </CustomListItem>
+        </List>
+    </content>
+    </Page>
+</mvc:View>

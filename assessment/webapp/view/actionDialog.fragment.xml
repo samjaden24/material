@@ -1,0 +1,51 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+    <Dialog id="materialDialog" title="Create / Update Material" class="sapUiContentPadding">
+        <f:SimpleForm editable="true" layout="ResponsiveGridLayout">
+            <f:content>
+                <Label text="Material ID" />
+                <Input value="{material>/materialId}" />
+
+                <Label text="Material Name" />
+                <Input value="{material>/materialName}" />
+
+                <Label text="Description" />
+                <Input value="{material>/description}" />
+
+                <Label text="Unit of Measure" />
+                <Input value="{material>/unitOfMeasure}" />
+
+                <Label text="Category" />
+                <Input value="{material>/category}" />
+
+                <Label text="Current Stock" />
+                <Input value="{material>/currentStock}" type="Number" />
+
+                <Label text="Min Stock Level" />
+                <Input value="{material>/minStockLevel}" type="Number" />
+
+                <Label text="Max Stock Level" />
+                <Input value="{material>/maxStockLevel}" type="Number" />
+
+                <Label text="Currency" />
+                <Input value="{material>/pricePerUnit/currency}" />
+
+                <Label text="Price Per Unit" />
+                <Input value="{material>/pricePerUnit/amount}" type="Number" />
+
+                <Label text="Currency" />
+                <Input value="{material>/pricePerUnit/currency}" />
+
+                <Label text="Price Per Unit" />
+                <Input value="{material>/pricePerUnit/amount}" type="Number" />
+            </f:content>
+        </f:SimpleForm>
+
+        <beginButton>
+            <Button text="Save" press="onSaveMaterial" />
+        </beginButton>
+
+        <endButton>
+            <Button text="Cancel" press="onCancelMaterial" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

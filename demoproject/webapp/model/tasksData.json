@@ -1,0 +1,74 @@
+{
+    "tasks": [
+      {
+        "taskId": "T001",
+        "taskName": "Fix login bug",
+        "description": "Resolve user login issue on mobile.",
+        "status": "Open",
+        "criticality": "High"
+      },
+      {
+        "taskId": "T002",
+        "taskName": "UI Enhancement",
+        "description": "Improve responsiveness of dashboard.",
+        "status": "In Progress",
+        "criticality": "Medium"
+      },
+      {
+        "taskId": "T003",
+        "taskName": "Code Cleanup",
+        "description": "Remove unused variables in module.",
+        "status": "Done",
+        "criticality": "Low"
+      },
+      {
+        "taskId": "T004",
+        "taskName": "Database Migration",
+        "description": "Migrate database to new server.",
+        "status": "Open",
+        "criticality": "High"
+      },
+      {
+        "taskId": "T005",
+        "taskName": "Write Unit Tests",
+        "description": "Add unit tests for authentication module.",
+        "status": "In Progress",
+        "criticality": "Medium"
+      },
+      {
+        "taskId": "T006",
+        "taskName": "Update Documentation",
+        "description": "Update user guide and technical documentation.",
+        "status": "Done",
+        "criticality": "Low"
+      },
+      {
+        "taskId": "T007",
+        "taskName": "Optimize Queries",
+        "description": "Improve performance of slow SQL queries.",
+        "status": "Open",
+        "criticality": "High"
+      },
+      {
+        "taskId": "T008",
+        "taskName": "Accessibility Improvements",
+        "description": "Ensure WCAG compliance for forms.",
+        "status": "In Progress",
+        "criticality": "Medium"
+      },
+      {
+        "taskId": "T009",
+        "taskName": "Refactor Login Module",
+        "description": "Simplify and modularize login code.",
+        "status": "Open",
+        "criticality": "Medium"
+      },
+      {
+        "taskId": "T010",
+        "taskName": "Security Audit",
+        "description": "Conduct security review of APIs.",
+        "status": "Scheduled",
+        "criticality": "High"
+      }
+    ]
+  }

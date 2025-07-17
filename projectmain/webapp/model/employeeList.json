@@ -1,0 +1,49 @@
+{
+    "employees": [
+      {
+        "id": "E101",
+        "name": "John Doe",
+        "designation": "Software Engineer",
+        "department": "IT",
+        "email": "john.doe@example.com",
+        "phone": "+91-9876543210",
+        "location": "Bangalore"
+      },
+      {
+        "id": "E102",
+        "name": "Priya Sharma",
+        "designation": "HR Manager",
+        "department": "Human Resources",
+        "email": "priya.sharma@example.com",
+        "phone": "+91-9123456780",
+        "location": "Mumbai"
+      },
+      {
+        "id": "E103",
+        "name": "Amit Kumar",
+        "designation": "UI Designer",
+        "department": "Design",
+        "email": "amit.kumar@example.com",
+        "phone": "+91-9988776655",
+        "location": "Hyderabad"
+      },
+      {
+        "id": "E104",
+        "name": "Sara Ali",
+        "designation": "Project Manager",
+        "department": "PMO",
+        "email": "sara.ali@example.com",
+        "phone": "+91-9090909090",
+        "location": "Delhi"
+      },
+      {
+        "id": "E105",
+        "name": "Rajesh Verma",
+        "designation": "QA Engineer",
+        "department": "Quality Assurance",
+        "email": "rajesh.verma@example.com",
+        "phone": "+91-9876501234",
+        "location": "Chennai"
+      }
+    ]
+  }

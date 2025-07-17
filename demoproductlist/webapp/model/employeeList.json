@@ -1,0 +1,24 @@
+{
+    "EmployeeList":[
+        {
+            "Id" : 1,
+            "Name" : "Sam",
+            "Dept" : "SAP"
+        },{
+            "Id" : 2,
+            "Name" : "Raju",
+            "Dept" : "HR"
+        },{
+            "Id" : 3,
+            "Name" : "Deepak",
+            "Dept" : "Java"
+        },{
+            "Id" : 4,
+            "Name" : "Sabari",
+            "Dept" : "Hybris"
+        }
+
+    ]
+        
+    
+}

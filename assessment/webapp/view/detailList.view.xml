@@ -1,0 +1,25 @@
+<mvc:View controllerName="demo.assessment.assessment.controller.detailList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="listPage" title="{i18n>title}" showNavButton="true" navButtonPress="navToBasic">
+    <List
+        id="idNavVendorsList"
+		items="{
+			path: 'vendorModel>/'
+		}" >
+		<headerToolbar>
+				<Toolbar>
+					<content>
+						<!-- <Title text="Vendor Details"/> -->
+						<ToolbarSpacer/>
+						<!-- <Button icon="sap-icon://sorting-ranking" press="onSort"></Button> -->
+						<SearchField width="25%" change="onChange"/>
+					</content>	
+			</Toolbar>
+		</headerToolbar>
+		<StandardListItem
+			title="Vendor Name: {vendorModel>vendorName}"
+			description="Contact Person: {vendorModel>contactPerson}"/>
+	</List>
+    </Page>
+</mvc:View>

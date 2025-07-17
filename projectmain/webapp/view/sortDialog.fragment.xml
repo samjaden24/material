@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" >
+    <Dialog title="Sort Options">
+        <content>
+            <VBox >
+                <RadioButton id="rbAscending" text="Ascending" groupName="sortOrder"/>
+                <RadioButton id="rbDescending" text="Descending" groupName="sortOrder"/>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button text="Confirm" press="onSortConfirm"></Button>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onSortCancel"></Button>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

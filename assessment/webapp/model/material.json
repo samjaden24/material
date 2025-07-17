@@ -1,0 +1,251 @@
+[
+  {
+    "materialId": "MAT001",
+    "materialName": "Laptop Pro 15",
+    "description": "High-performance laptop with 15-inch display and 16GB RAM",
+    "unitOfMeasure": "Each",
+    "category": "Electronics",
+    "currentStock": 50,
+    "minStockLevel": 10,
+    "maxStockLevel": 100,
+    "pricePerUnit": {
+      "currency": "USD",
+      "amount": 1200
+    },
+    "vendors": [
+      {
+        "vendorId": "VEN001",
+        "vendorName": "Tech Supplies Inc.",
+        "contactPerson": "Alice Smith",
+        "email": "alice.s@techsupplies.com",
+        "phone": "+1-555-123-4567",
+        "address": {
+          "street": "123 Tech Lane",
+          "city": "Silicon Valley",
+          "state": "CA",
+          "zipCode": "95054",
+          "country": "USA"
+        },
+        "leadTimeDays": 7,
+        "lastOrderDate": "2025-07-05",
+        "vendorMaterialCode": "TS-LP15",
+        "isPreferred": true,
+        "minOrderQuantity": 5
+      },
+      {
+        "vendorId": "VEN003",
+        "vendorName": "Global Gadgets Co.",
+        "contactPerson": "Charlie Brown",
+        "email": "charlie.b@globalgadgets.com",
+        "phone": "+44-20-7946-0123",
+        "address": {
+          "street": "45 Market Street",
+          "city": "London",
+          "postalCode": "SW1A 0AA",
+          "country": "UK"
+        },
+        "leadTimeDays": 14,
+        "lastOrderDate": "2025-06-28",
+        "vendorMaterialCode": "GG-LAPTOP-P15",
+        "isPreferred": false,
+        "minOrderQuantity": 10
+      }
+    ]
+  },
+  {
+    "materialId": "MAT002",
+    "materialName": "Ergonomic Office Chair",
+    "description": "Adjustable office chair with lumbar support and mesh back",
+    "unitOfMeasure": "Each",
+    "category": "Office Furniture",
+    "currentStock": 20,
+    "minStockLevel": 5,
+    "maxStockLevel": 50,
+    "pricePerUnit": {
+      "currency": "USD",
+      "amount": 350.5
+    },
+    "vendors": [
+      {
+        "vendorId": "VEN002",
+        "vendorName": "Office Solutions Ltd.",
+        "contactPerson": "Bob Johnson",
+        "email": "bob.j@officesolutions.net",
+        "phone": "+1-555-987-6543",
+        "address": {
+          "street": "789 Business Ave",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "10001",
+          "country": "USA"
+        },
+        "leadTimeDays": 5,
+        "lastOrderDate": "2025-07-10",
+        "vendorMaterialCode": "OS-ERGO-CHAIR",
+        "isPreferred": true,
+        "minOrderQuantity": 1
+      }
+    ]
+  },
+  {
+    "materialId": "MAT003",
+    "materialName": "HDMI Cable 2M",
+    "description": "2-meter High-Speed HDMI Cable with Ethernet",
+    "unitOfMeasure": "Each",
+    "category": "Electronics Accessories",
+    "currentStock": 200,
+    "minStockLevel": 50,
+    "maxStockLevel": 300,
+    "pricePerUnit": {
+      "currency": "USD",
+      "amount": 15.99
+    },
+    "vendors": [
+      {
+        "vendorId": "VEN001",
+        "vendorName": "Tech Supplies Inc.",
+        "contactPerson": "Alice Smith",
+        "email": "alice.s@techsupplies.com",
+        "phone": "+1-555-123-4567",
+        "address": {
+          "street": "123 Tech Lane",
+          "city": "Silicon Valley",
+          "state": "CA",
+          "zipCode": "95054",
+          "country": "USA"
+        },
+        "leadTimeDays": 3,
+        "lastOrderDate": "2025-07-12",
+        "vendorMaterialCode": "TS-HDMI-2M",
+        "isPreferred": true,
+        "minOrderQuantity": 10
+      },
+      {
+        "vendorId": "VEN004",
+        "vendorName": "Cable Connectors Co.",
+        "contactPerson": "David Lee",
+        "email": "david.l@cableconnectors.org",
+        "phone": "+86-10-8765-4321",
+        "address": {
+          "street": "99 Industrial Park",
+          "city": "Shenzhen",
+          "province": "Guangdong",
+          "country": "China"
+        },
+        "leadTimeDays": 20,
+        "lastOrderDate": "2025-06-20",
+        "vendorMaterialCode": "CC-HDMI02",
+        "isPreferred": false,
+        "minOrderQuantity": 50
+      }
+    ]
+  },
+  {
+    "materialId": "MAT004",
+    "materialName": "Wireless Laser Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI",
+    "unitOfMeasure": "Each",
+    "category": "Computer Peripherals",
+    "currentStock": 75,
+    "minStockLevel": 20,
+    "maxStockLevel": 150,
+    "pricePerUnit": {
+      "currency": "USD",
+      "amount": 29.99
+    },
+    "vendors": [
+      {
+        "vendorId": "VEN001",
+        "vendorName": "Tech Supplies Inc.",
+        "contactPerson": "Alice Smith",
+        "email": "alice.s@techsupplies.com",
+        "phone": "+1-555-123-4567",
+        "address": {
+          "street": "123 Tech Lane",
+          "city": "Silicon Valley",
+          "state": "CA",
+          "zipCode": "95054",
+          "country": "USA"
+        },
+        "leadTimeDays": 4,
+        "lastOrderDate": "2025-07-01",
+        "vendorMaterialCode": "TS-WMOUSE",
+        "isPreferred": true,
+        "minOrderQuantity": 5
+      },
+      {
+        "vendorId": "VEN005",
+        "vendorName": "Peripheral Partners",
+        "contactPerson": "Emily White",
+        "email": "emily.w@peripartners.com",
+        "phone": "+61-2-1234-5678",
+        "address": {
+          "street": "88 Sydney Road",
+          "city": "Sydney",
+          "state": "NSW",
+          "postalCode": "2000",
+          "country": "Australia"
+        },
+        "leadTimeDays": 10,
+        "lastOrderDate": "2025-06-15",
+        "vendorMaterialCode": "PP-LASER-M",
+        "isPreferred": false,
+        "minOrderQuantity": 20
+      }
+    ]
+  },
+  {
+    "materialId": "MAT005",
+    "materialName": "A4 Printer Paper (Ream)",
+    "description": "500 sheets of 80gsm A4 white printer paper",
+    "unitOfMeasure": "Ream",
+    "category": "Office Supplies",
+    "currentStock": 150,
+    "minStockLevel": 30,
+    "maxStockLevel": 200,
+    "pricePerUnit": {
+      "currency": "USD",
+      "amount": 7.5
+    },
+    "vendors": [
+      {
+        "vendorId": "VEN002",
+        "vendorName": "Office Solutions Ltd.",
+        "contactPerson": "Bob Johnson",
+        "email": "bob.j@officesolutions.net",
+        "phone": "+1-555-987-6543",
+        "address": {
+          "street": "789 Business Ave",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "10001",
+          "country": "USA"
+        },
+        "leadTimeDays": 2,
+        "lastOrderDate": "2025-07-14",
+        "vendorMaterialCode": "OS-PAPER-A4",
+        "isPreferred": true,
+        "minOrderQuantity": 10
+      },
+      {
+        "vendorId": "VEN006",
+        "vendorName": "Paper Paradise Inc.",
+        "contactPerson": "Mark Twain",
+        "email": "mark.t@paperparadise.com",
+        "phone": "+1-555-333-1111",
+        "address": {
+          "street": "22 Paper Mill Road",
+          "city": "Atlanta",
+          "state": "GA",
+          "zipCode": "30303",
+          "country": "USA"
+        },
+        "leadTimeDays": 3,
+        "lastOrderDate": "2025-07-13",
+        "vendorMaterialCode": "PP-A4-500",
+        "isPreferred": false,
+        "minOrderQuantity": 50
+      }
+    ]
+  }
+]
