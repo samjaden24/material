@@ -39,6 +39,7 @@ sap.ui.define([
         onSortCancel(){
             this.loadSort.close();
         },
+        
         onSortConfirm(evt){
             var getSelectedField = sap.ui.getCore().byId("sortFieldSelect").getSelectedKey();
             var getAscSelected = sap.ui.getCore().byId("rbAscending").getSelected();
