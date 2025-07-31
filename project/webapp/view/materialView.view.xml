@@ -1,0 +1,38 @@
+<mvc:View controllerName="project.controller.materialView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <List items="{/Employees}" >
+            <items>
+                <ObjectListItem title="{FirstName} {LastName}" number="{HomePhone}"/>
+            </items>
+        </List> -->
+        <Table id="productTableId" items="{productModel>/results}">
+            <columns>
+                <Column >
+                    <Text text="Product ID"/>
+                </Column>
+                <Column >
+                    <Text text="Product Name" />
+                </Column>
+                <Column >
+                    <Text text="Supplier ID"/>
+                </Column>
+            </columns>
+             <headerToolbar>
+   <Toolbar>
+   <ToolbarSpacer/>
+   <SearchField width="20%" change="onSearchProducts"/>
+   </Toolbar>
+    </headerToolbar>
+ 
+            <ColumnListItem >
+                <cells>
+                    <Text text="{productModel>ProductID}"/>
+                    <Text text="{productModel>ProductName}"/>
+                    <Text text="{productModel>SupplierID}"/>
+                </cells>
+            </ColumnListItem>
+        </Table>
+    </Page>
+</mvc:View>
